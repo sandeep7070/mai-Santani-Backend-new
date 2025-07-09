@@ -38,20 +38,20 @@ const orderHistorySchema = new mongoose.Schema({
     id: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'User',
-      // required: true
+      required: true
     },
     name: {
       type: String,
-      // required: true
+      required: true
     },
     email: {
       type: String,
       required: true,
-      // lowercase: true
+      lowercase: true
     },
     contact: {
       type: String,
-      // required: true
+      required: true
     },
     shippingAddress: {
       street : {
@@ -80,11 +80,11 @@ const orderHistorySchema = new mongoose.Schema({
     productId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Product',
-      // required: true
+      required: true
     },
     name: {
       type: String,
-      // required: true
+      required: true
     },
     price: {
       type: Number,

@@ -54,7 +54,7 @@ import attributeRoutes from './src/routes/attributes.routes.js';
 import historyRouters from './src/routes/history.router.js';
 import  orderRouter  from './src/routes/order.routes.js';
 import userRouter   from './src/routes/user.routes.js';
-
+// import herosectionRouter from './src/routes/herosection.routes.js';
 
 try {
     const adminRouter = await import('./src/routes/admin.routes.js');
@@ -68,6 +68,7 @@ try {
     app.use('/historyStock', historyRouters);
     app.use('/orders', orderRouter);
     app.use('/user', userRouter);
+    // app.use('/herosection', herosectionRouter)
 } catch (error) {
     console.error('Error loading routes:', error.message);
     process.exit(1);
